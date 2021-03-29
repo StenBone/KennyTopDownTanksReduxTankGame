@@ -220,7 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e42eac29557b4db428b4ae1930cfb0e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _movementSpeed: 1
+  _FowardBackwardSpeed: 1
 --- !u!114 &23280998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,6 +266,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 264465ea-9287-4f60-9b01-cb8f03eaeccd
     m_ActionName: Tank/ForwardBackward[/Keyboard/s,/Keyboard/w]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 23280997}
+        m_TargetAssemblyTypeName: Movement, Assembly-CSharp
+        m_MethodName: setHorizontalAxis
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: fa8bd3bc-699d-473c-8fa2-fbddbcd6557c
+    m_ActionName: Tank/HorizontalAxis[/Keyboard/a,/Keyboard/d]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard
   m_DefaultActionMap: Tank
