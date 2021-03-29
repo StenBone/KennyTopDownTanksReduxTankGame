@@ -7,9 +7,9 @@ public class Movement : MonoBehaviour
 {
     [Header("Movement")] 
     [SerializeField]
-    private float movementSpeed = 1f;
+    private float _movementSpeed = 1f;
 
-    private Vector2 _inputMovement = Vector2.zero;
+    private float _verticalAxis = 0;
     
     // Start is called before the first frame update
     void Start()
@@ -20,12 +20,14 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Time.deltaTime * movementSpeed * _inputMovement);
+        Vector2 pos = transform.position;
+        pos.y = Time.deltaTime * _movementSpeed * _verticalAxis;
+        transform.Translate(pos);
     }
 
-    public void onMove(InputAction.CallbackContext value)
+    public void setVerticalAxis(InputAction.CallbackContext value)
     {
-        _inputMovement = value.ReadValue<Vector2>();
+        _verticalAxis = value.ReadValue<float>();
     }
     
 }
