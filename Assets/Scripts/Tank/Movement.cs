@@ -7,7 +7,10 @@ public class Movement : MonoBehaviour
 {
     [Header("Movement")] 
     [SerializeField]
-    private float _FowardBackwardSpeed = 1f;
+    private float _forwardBackwardSpeed = 1f;
+
+    [SerializeField] 
+    private float _turnSpeed = 45f;
 
     private float _verticalAxis = 0;
     private float _horizontalAxis = 0;
@@ -21,25 +24,22 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float yDelta = (Time.deltaTime * _FowardBackwardSpeed * _verticalAxis);
+        float yDelta = (Time.deltaTime * _forwardBackwardSpeed * _verticalAxis);
         transform.Translate(0, yDelta, 0, Space.Self);
 
-        if (Keyboard.current.dKey.isPressed)
-        {
-            float newZRot = transform.rotation.eulerAngles.z + (-1 * 45 * Time.deltaTime);
-            transform.rotation = Quaternion.Euler(0, 0, newZRot);
-        }
+        float zRotDelta = transform.rotation.eulerAngles.z + (_horizontalAxis * _turnSpeed * Time.deltaTime);
+        transform.rotation = Quaternion.Euler(0, 0, zRotDelta);
         
     }
 
     // todo can I just make these attributes?
     // todo would it be better to read directly from input if I am using them this way?
-    public void setVerticalAxis(InputAction.CallbackContext value)
+    public void SetVerticalAxis(InputAction.CallbackContext value)
     {
         _verticalAxis = value.ReadValue<float>();
     }
 
-    public void setHorizontalAxis(InputAction.CallbackContext value)
+    public void SetHorizontalAxis(InputAction.CallbackContext value)
     {
         _horizontalAxis = value.ReadValue<float>();
     }

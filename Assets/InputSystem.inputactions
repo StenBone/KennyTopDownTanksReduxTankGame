@@ -23,9 +23,9 @@
                 },
                 {
                     "name": "HorizontalAxis",
-                    "type": "Button",
-                    "id": "fa8bd3bc-699d-473c-8fa2-fbddbcd6557c",
-                    "expectedControlType": "Button",
+                    "type": "Value",
+                    "id": "a4a4db7e-fb64-46e0-953c-ea5c34592497",
+                    "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": ""
                 }
@@ -121,7 +121,7 @@
                 },
                 {
                     "name": "1D Axis",
-                    "id": "e683a5f2-e281-4c2b-849a-d1b0b6bb97cc",
+                    "id": "e88d1d78-325e-4d66-9c39-110ed1378f1d",
                     "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
@@ -132,8 +132,8 @@
                 },
                 {
                     "name": "negative",
-                    "id": "87b5e000-8d3b-4348-b83f-30373a9c87bd",
-                    "path": "<Keyboard>/a",
+                    "id": "0dd4d442-2e2e-4658-85b1-730799ef4faf",
+                    "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
@@ -143,8 +143,8 @@
                 },
                 {
                     "name": "positive",
-                    "id": "99230f5a-d652-4fad-8e72-e6cac727e0a7",
-                    "path": "<Keyboard>/d",
+                    "id": "59d4262b-745c-49fe-8a74-5674e809935e",
+                    "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
