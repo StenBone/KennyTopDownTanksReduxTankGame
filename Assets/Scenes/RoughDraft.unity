@@ -220,7 +220,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e42eac29557b4db428b4ae1930cfb0e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _FowardBackwardSpeed: 1
+  _forwardBackwardSpeed: 1
+  _turnSpeed: 45
 --- !u!114 &23280998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,7 +255,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 23280997}
         m_TargetAssemblyTypeName: Movement, Assembly-CSharp
-        m_MethodName: setVerticalAxis
+        m_MethodName: SetVerticalAxis
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -270,7 +271,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 23280997}
         m_TargetAssemblyTypeName: Movement, Assembly-CSharp
-        m_MethodName: setHorizontalAxis
+        m_MethodName: SetHorizontalAxis
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -411,6 +412,7 @@ GameObject:
   m_Component:
   - component: {fileID: 914116193}
   - component: {fileID: 914116194}
+  - component: {fileID: 914116195}
   m_Layer: 0
   m_Name: Turret
   m_TagString: Untagged
@@ -483,6 +485,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &914116195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914116192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07fca22d2111d9b4cb64eb6e5dcadf51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameCamera: {fileID: 625909159}
 --- !u!1 &1100599581
 GameObject:
   m_ObjectHideFlags: 0
