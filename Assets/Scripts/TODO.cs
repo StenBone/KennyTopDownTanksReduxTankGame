@@ -2,6 +2,14 @@ public class TODO
 {
 }
 /*
+ todo install the remaining 2d packages and learn how to use them
+ make a video about how to solve the error with sprite not showing
+ 
+ Other ways to improve
+ Answering questions on Unity Help
+ Looking at opensource projects
+ 
+ 
 todo Camera Zoom
 todo projectile
 todo instantiate projectile via input at muzzle
