@@ -23,9 +23,11 @@ public class LerpAim : MonoBehaviour
     // FixedUpdate since the barrel will have a collider and might hit a wall
     void FixedUpdate()
     {
-        var mouse = Mouse.current;
+        var mouse = Mouse.current; // todo cache this variable
         // mouse?.position.ReadValue(); // todo null conditional operator
-
+        
+        // todo use new input system
+        
         if (mouse != null)
         {
             var worldMousePos = _gameCamera.ScreenToWorldPoint(mouse.position.ReadValue());

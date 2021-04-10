@@ -6,12 +6,15 @@ using UnityEngine.Assertions;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Bullet : MonoBehaviour
 {
+    [SerializeField] private float launchForce = 50f; // todo consistent style settings
+    [SerializeField] private float lifeSpanInSeconds = 5f;
+    
     // Start is called before the first frame update
     void Start()
     {
         var rb = gameObject.GetComponent<Rigidbody2D>();
-        rb.AddForce(Vector2.up * 150f, ForceMode2D.Impulse); // apply forward force
-        Destroy(gameObject, 5f); // destroy gameobject after 5 seconds
+        rb.AddForce(Vector2.up * launchForce, ForceMode2D.Impulse); // apply forward force
+        Destroy(gameObject, lifeSpanInSeconds); // destroy gameobject after 5 seconds
     }
     
     private void OnTriggerEnter2D(Collider2D collider) {
