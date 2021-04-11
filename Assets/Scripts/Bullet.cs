@@ -13,7 +13,7 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         var rb = gameObject.GetComponent<Rigidbody2D>();
-        rb.AddForce(Vector2.up * launchForce, ForceMode2D.Impulse); // apply forward force
+        rb.AddForce(transform.up * launchForce, ForceMode2D.Impulse); // apply forward force
         Destroy(gameObject, lifeSpanInSeconds); // destroy gameobject after 5 seconds
     }
     
