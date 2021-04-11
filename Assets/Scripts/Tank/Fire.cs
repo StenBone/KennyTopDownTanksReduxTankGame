@@ -9,5 +9,6 @@ public class Fire : MonoBehaviour
 
     public void LaunchBullet(InputAction.CallbackContext value) {
         Instantiate(bulletPrefab, transform.position, transform.rotation);
+        // todo launching multiple projectiles on press and release
     }
 }
