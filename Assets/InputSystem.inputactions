@@ -172,7 +172,7 @@
                     "name": "",
                     "id": "448bb727-dacc-4a72-958c-e362c3bb5964",
                     "path": "<Keyboard>/space",
-                    "interactions": "Press",
+                    "interactions": "",
                     "processors": "",
                     "groups": "KeyboardAndMouse",
                     "action": "Fire",

@@ -10,6 +10,8 @@ public class TODO
  Looking at opensource projects
  
  
+todo bullet damaging something
+todo tank health
 todo Camera Zoom
 todo projectile
 todo instantiate projectile via input at muzzle

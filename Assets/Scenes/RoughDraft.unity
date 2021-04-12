@@ -139,7 +139,7 @@ GameObject:
   m_Layer: 0
   m_Name: Tank
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -431,7 +431,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &854063159
 Transform:
   m_ObjectHideFlags: 0
@@ -710,7 +710,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1312711692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -965,6 +965,10 @@ PrefabInstance:
     - target: {fileID: 437115591703052578, guid: 3be6d56eb4e7db54383a88a09f34facf, type: 3}
       propertyPath: m_Name
       value: Bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 437115591703052578, guid: 3be6d56eb4e7db54383a88a09f34facf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 437115591703052579, guid: 3be6d56eb4e7db54383a88a09f34facf, type: 3}
       propertyPath: m_RootOrder
