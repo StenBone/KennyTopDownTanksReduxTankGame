@@ -16,6 +16,18 @@ todo Camera Zoom
 todo projectile
 todo instantiate projectile via input at muzzle
 
+GDD after a little bit of thought:
+Story is that you have to defeat the General's army
+You are a merc for the rebels.
+You upgrade your tank at a store
+The game will have a tile map for levels
+Simple AI for enemies
+Simple UI
+Sounds
+Particles for impacts
+Menu screen
+Levels
+
 
 
 Target: https://www.youtube.com/watch?v=AJ7lLzMgJ98&list=WL&index=7
