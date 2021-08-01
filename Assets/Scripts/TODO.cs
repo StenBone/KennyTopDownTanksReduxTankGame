@@ -20,7 +20,8 @@ GDD after a little bit of thought:
 Story is that you have to defeat the General's army
 You are a merc for the rebels.
 You upgrade your tank at a store
-The game will have a tile map for levels
+The game will have a tile map for 3 levels
+Levels will be small and tight to compliment the slower more tactical gameplay
 Simple AI for enemies
 Simple UI
 Sounds

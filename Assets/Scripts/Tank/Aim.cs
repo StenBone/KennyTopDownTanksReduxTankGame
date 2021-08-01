@@ -5,7 +5,7 @@ using UnityEngine.Assertions;
 using UnityEngine.InputSystem;
 
 // todo inherit from snapaim
-public class SlerpAim : MonoBehaviour
+public class Aim : MonoBehaviour
 {
     // todo move this to a utility class, game manager thing?
     [SerializeField] 
@@ -42,7 +42,9 @@ public class SlerpAim : MonoBehaviour
             angle -= 90f; // to prevent it from pointing with the x axis
             Quaternion targetRot = Quaternion.AngleAxis(angle, Vector3.forward);
 
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, Time.deltaTime * _rotationSpeed);
+            transform.rotation = Quaternion.Lerp(transform.rotation, targetRot, Time.deltaTime * _rotationSpeed);
+            //transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, Time.deltaTime * _rotationSpeed);
+            
             // transform.up = directionToFace; // this works but doesn't tell you the angle
 
             #endregion

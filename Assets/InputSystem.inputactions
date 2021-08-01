@@ -180,6 +180,17 @@
                     "isPartOfComposite": false
                 },
                 {
+                    "name": "",
+                    "id": "e5e28f07-fcc7-48c0-9bef-56417a16cafa",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardAndMouse",
+                    "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
                     "name": "1D Axis",
                     "id": "26359305-5489-4b9c-b6ba-d97cda04739b",
                     "path": "1DAxis",
