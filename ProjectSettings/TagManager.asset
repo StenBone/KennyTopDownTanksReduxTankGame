@@ -42,3 +42,33 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ground
+    uniqueID: 3403255501
+    locked: 0
+  - name: DetailsBottom
+    uniqueID: 1454778599
+    locked: 0
+  - name: Obstacles
+    uniqueID: 2897275637
+    locked: 0
+  - name: Enemies
+    uniqueID: 1343077091
+    locked: 0
+  - name: Player
+    uniqueID: 435924025
+    locked: 0
+  - name: Items
+    uniqueID: 801834271
+    locked: 0
+  - name: Bullets
+    uniqueID: 383823575
+    locked: 0
+  - name: SpecialEffects
+    uniqueID: 2370209187
+    locked: 0
+  - name: DetailsTop
+    uniqueID: 2467293515
+    locked: 0
+  - name: UI
+    uniqueID: 1037742079
+    locked: 0
