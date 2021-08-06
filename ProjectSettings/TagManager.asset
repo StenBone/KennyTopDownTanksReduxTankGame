@@ -39,13 +39,13 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: Ground
     uniqueID: 3403255501
     locked: 0
-  - name: DetailsBottom
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: OnGround
     uniqueID: 1454778599
     locked: 0
   - name: Obstacles
@@ -66,7 +66,7 @@ TagManager:
   - name: SpecialEffects
     uniqueID: 2370209187
     locked: 0
-  - name: DetailsTop
+  - name: Canopy
     uniqueID: 2467293515
     locked: 0
   - name: UI
